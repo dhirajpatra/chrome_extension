@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="jquery.min.js"></script>
+  <script src="popup.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    form {
+      width: 500px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <h1><span class="badge badge-secondary">YouTube Video Details Capture</span></h1>
+  <div id="video_details" name="video_details">
+    <form id="video_frm" name="video_frm">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Video URL</label>
+        <input type="text" class="form-control" id="video_url" name="video_url">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Thumbnail URL</label>
+        <input type="text" class="form-control" id="thumbnail_url" name="thumbnail_url">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Author</label>
+        <input type="text" class="form-control" id="author" name="author">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Iframe</label>
+        <div id="video_iframe" name="video_iframe"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+
+</html>
